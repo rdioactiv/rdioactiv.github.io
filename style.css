@@ -1,0 +1,497 @@
+/* Reset and Common Styles */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+  }
+  
+  html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+  
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section-heading {
+    font-size: 5rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    margin-bottom: 15rem;
+    border-bottom: 0.3rem solid #333;
+    text-shadow: 0.2rem 0.2rem 0.5rem #555;
+  }
+  /* End of Reset and Common Styles */
+  
+  /* Section 1 */
+  .section-1 {
+    width: 100%;
+    height: 110vh;
+    background-color: #0B132B,
+      url(images/bg.jpg) center no-repeat;
+      background-color: #0B132B;
+    background-size: cover;
+    flex-direction: column;
+  }
+  
+  .section-1-heading {
+    font-size: 6rem;
+    font-weight: 700;
+    color: #6FFFE9;
+    background-color: #3A506B;
+    padding: 0 3rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    border-bottom: 0.3rem solid #6FFFE9;
+    text-shadow: 0.2rem 0.2rem 1rem #555;
+    transform: skew(-10deg);
+  }
+  
+  .person-info1 {
+    margin-bottom: -80px;
+    display: flex;
+    align-items: center;
+    float: left;
+  }
+  .person-info2{
+    display: flex;
+    align-items: center;
+    float: left;
+  } 
+  .person-img {
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 0.7rem dotted #6FFFE9;
+    background-color: black(255, 255, 255, 0.7);
+    padding: 0.5rem;
+    opacity: 0.9;
+    margin-right: 1rem;
+  }
+  
+  .person-name {
+    font-size: 4rem;
+    color: #6FFFE9;
+    background-color: #1C2541;
+    margin: 5rem 0;
+    padding: 0.5rem 3rem;
+    letter-spacing: 0.3rem;
+    transform: skew(-10deg);
+  }
+  
+  .career-summary {
+    font-size: 3.5rem;
+    color: #fff;
+    background-color: #0B132B;
+    padding: 1rem 3rem;
+    margin-bottom: 5rem;
+  }
+  
+  .section-1-btn {
+    margin-left: 20px;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #6FFFE9;
+    background-color: #3A506B;
+    border: 0.3rem solid #333;
+    padding: 0.5rem 1rem;
+    transform: skew(-10deg);
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    float: right;
+  }
+
+  .section-1-btn:hover{
+    color: rgb(197, 0, 247);
+    
+  }
+
+
+  /* End of Section 1 */
+
+  /* Navbar */
+.navbar {
+    width: 100%;
+    height: 4rem;
+    background-color: cyan;
+    box-shadow: 0.2rem 0.2rem 0.5rem #5BC0BE;
+    /* position: absolute; */
+    /* z-index: 300; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+  }
+  
+  .navbar-link {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #0B132B;
+    margin: 0 3rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    position: relative;
+    transition: color 0.2s;
+  }
+  
+  .change.navbar-link {
+    color: #3A506B;
+  }
+  
+  .navbar-link:hover {
+    color: white;
+  }
+  
+  .navbar-link::before {
+    content: "";
+    width: 0;
+    height: 0.2rem;
+    background-color: white;
+    position: absolute;
+    right: -15%;
+    bottom: -0.3rem;
+    transition: width 0.2s;
+  }
+  
+  .change.navbar-link::before {
+    width: 130%;
+  }
+  
+  .navbar-link:hover::before {
+    width: 130%;
+  }
+  /* End of Navbar */
+
+  /* Section 2 */
+  .section-2 h1{
+  
+    /* margin-top: 10rem; */
+    margin-bottom: 0rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1C2541;
+    color: #6FFFE9;
+    padding: 50px;
+    
+  }
+
+  .progress-bars-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    background-color: #3A506B;
+  }
+
+
+  .progress-text {
+    font-size: 4rem;
+    color: #333;
+    background-color: #eee;
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    text-align: center;
+    flex: 1 0 20%;
+  }
+
+  iconify-icon {
+    font-size: 10rem;
+  }
+  
+  i.far {
+    font-size: 10rem;
+  }
+
+  i.fa-solid,
+  i.fa-regular {
+    font-size: 10rem; 
+  }
+/* Section 3 */
+.section-heading.section-3-heading{
+  color: #6FFFE9;
+}
+
+.section-3 {
+  width: 100%;
+  height: 100%;
+  padding: 10rem 0;
+  background-color: #0B132B;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-wrapper {
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  background-color: rgb(144, 0, 180);
+  box-shadow: 0.3rem 0.3rem 0.5rem black;
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.5s;
+}
+
+.project:hover {
+  box-shadow: 1rem 1rem 1rem cyan;
+}
+
+.project-text {
+  text-align: center;
+  letter-spacing: 0.1rem;
+  position: absolute;
+  top: -12rem;
+  z-index: 10;
+  transition: top 0.3s;
+}
+
+.project:hover .project-text {
+  top: 5rem;
+  transition: top 0.3s 0.3s;
+}
+
+.project-name {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #6FFFE9;
+  text-transform: capitalize;
+}
+
+.project-technologies {
+  font-size: 2.8rem;
+  color: #6FFFE9;
+}
+
+.project-img {
+  width: 60rem;
+  transition: opacity 0.3s;
+}
+
+.project:hover .project-img {
+  opacity: 0.2;
+}
+
+.project-link {
+  font-size: 3rem;
+  font-weight: 500;
+  color: cyan;
+  letter-spacing: 0.1rem;
+  border: 0.3rem solid gold;
+  padding: 0 1rem;
+  background-color: black;
+  position: absolute;
+  bottom: -10rem;
+  transition: bottom 0.3s;
+}
+
+.project:hover .project-link {
+  bottom: 8rem;
+  transition: bottom 0.3s 0.3s;
+}
+/* End of Section 3 */
+
+/* Section 4 */
+.section-4 {
+  text-align: center;
+  background-color: #1C2541;
+}
+
+.section-4-heading {
+  text-align: center;
+  color: cyan;
+  box-shadow: none;
+ 
+  padding: 40px;
+  
+}
+.contact-info {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.contact-info > * {
+  display: flex;
+  align-items: center;
+}
+
+.fas{
+  margin-top: -10rem;
+  font-size: 100px;
+  margin-bottom: 10rem;
+}
+.contact-address,
+.contact-phone,
+.contact-email {
+  font-size: 30px;
+  line-height: 1.5;
+
+}
+
+
+.contact-address a,
+.contact-phone a,
+.contact-email a {
+  color: gold; /* Link color */
+  text-decoration: none; /* Remove underline from links */
+}
+.contact-address a:hover,
+.contact-phone a:hover,
+.contact-email a:hover {
+  color: rgb(197, 0, 247); /* Link hover color */
+}
+
+
+
+.footer{
+  padding: 30px;
+  background-color: #1C2541;
+}
+
+
+.footer-links {
+  margin-top: 10rem;
+  display: flex; 
+  margin-left: 8rem;
+  margin-right: 8rem;
+  justify-content: space-between; 
+  
+}
+
+.footer-link {
+  color: gold; /* Link color */
+  text-decoration: none; /* Remove underline from links */
+  font-size: 50px; /* Link font size */
+}
+
+.footer-link:hover {
+  color: rgb(197, 0, 247);
+}
+
+
+
+
+
+
+@media (max-width: 1200px) {
+  .services {
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  .service {
+    margin: 3rem 2rem;
+  }
+
+  .section-4 {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 800px) {
+  .section-1-heading {
+    font-size: 4rem;
+  }
+
+  .progress-bar{
+    width: 50rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-1-heading {
+    font-size: 3rem;
+  }
+
+  .navbar-link {
+    margin: 0 2rem;
+    font-size: 1.5rem;
+  }
+
+  .section-2 {
+    padding: 10rem;
+  }
+
+  .section-2-heading {
+    margin-bottom: 10rem;
+  }
+
+  .progress-bar {
+    width: 45rem;
+  }
+
+  .project-img {
+    width: 100%;
+  }
+  .contact-address,
+  .contact-phone,
+  .contact-email {
+    width: 55rem;
+  }
+
+}
+
+@media (max-width: 500px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 45%;
+  }
+
+  .section-1-heading {
+    font-size: 2.5rem;
+  }
+
+  .navbar-link {
+    margin: 0 1.5rem;
+  }
+
+  .section-2-heading {
+    text-align: center;
+  }
+
+  .progress-bar {
+    width: 40rem;
+  }
+}
+
+
+
+  
+
+  
